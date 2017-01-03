@@ -1,8 +1,12 @@
 # encoding: GBK
 
-ary = (1..100).to_a
-result = []
-10.times do |i|
-	result << ary[10 * i, 10]
+# StringOfStdin = gets
+# p StringOfStdin
+
+require "open-uri"
+options = {
+	"Accept-Language" => "zh-cn, en;q=0.5", 
+}
+open "http://www.ruby-lang.org", options do |io|
+	puts io.read
 end
-p result
