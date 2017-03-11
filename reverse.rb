@@ -6,6 +6,6 @@ def my_reverse(aa)
 	aa.push f_a
 end
 
-rb_reverse = my_reverse [1,2,3,4,5,6]
+rb_reverse = my_reverse [1,2,3,4,5,6,7]
 
 p rb_reverse
